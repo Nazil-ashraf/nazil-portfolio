@@ -24,9 +24,9 @@ export const Home = ({handleBackClick})=>{
       }}
     >
       <div className='flex'>
-        <div>
+        <div className="home-content-flex">
    
-    <h3>Hello , I'm</h3>
+          <h3>Hello , I'm</h3>
      <h2 >  Nazil Ashraf C</h2>
 
 <span>

@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
+import uparrow from '../image/uparrow.png';
 
 export default function Header() {
 
@@ -22,14 +23,25 @@ export default function Header() {
         }
     }, [])
 
+    
+ const scrollToTop = () => {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+  });
+};
+
     return (
         <div className={navBackground ?  "scroll-header" : "header" }>
+            {navBackground && 
+             <div className='scroll-up-btn' onClick={scrollToTop}><img src ={uparrow}      height= "36px"/></div>
+            }
           
              <nav className="nav__container__actions">
               
           <ul>
             <li>
-              <Link activeClass="active" smooth spy to='home'>
+              <Link activeClass="active" smooth spy to='home'     >
                 HOME
               </Link>
             </li>
@@ -39,23 +51,25 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="skill">
+              <Link activeClass="active" smooth spy to="skill" >
             SKILLS
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="resume">
+              <Link activeClass="active" smooth spy to="resume" offset={-50}>
                  RESUME
               </Link>
             </li>
             <li>
-              <Link activeClass="active" smooth spy to="connect">
+              <Link activeClass="active" smooth spy to="connect"  offset={-100}>
                 CONNECT
               </Link>
             </li>
           </ul>
         </nav>
+      
            
         </div >
+
     );
 }

@@ -44,7 +44,9 @@ import { Snackbar } from '@mui/material';
 
 return (
     <div className="connect-page" id='connect'>
-         <div className="connect-page--heading" >Get In Touch With</div>
+             <div class="common-heading">
+              <h1>Get In Touch With</h1>
+            </div>
          <div className="connect-page--flex">
          <div className="connect-page--flex--contact" >
          <div className="connect-page--flex--contact--text" >I'm constantly ready to connect with you. Feel free to reach out to me through </div>

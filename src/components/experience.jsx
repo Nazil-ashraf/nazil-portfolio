@@ -6,7 +6,10 @@ export const Experience =()=>{
     const [tabValue,setTabValue]=useState(1)
     return(
         <div className="experience-page" id='resume'>
-            <div className="experience-page--heading">My Resume</div>
+                   <div class="common-heading">
+              <h1>My Resume</h1>
+            </div>
+            {/* <div className="experience-page--heading"></div> */}
             <div className="experience-page--tab">
             <div className={tabValue === 1 ? "experience-page--tab--title-active" :"experience-page--tab--title"} onClick={()=>{setTabValue(1)}}>
             Education

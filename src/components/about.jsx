@@ -6,7 +6,12 @@ const About =({Ref})=>{
     return(
  
         <div className="about-page" ref={Ref}  id="about" >
-       
+            
+             <div class="common-heading">
+              <h1>About</h1>
+            </div>
+  
+       <div className="flex">
 
 
                    {/* <section id="about"> */}
@@ -22,7 +27,7 @@ const About =({Ref})=>{
                 </div>
                 <div className="about-page--right--description">
                 A Front End Developer with 1.8 years of experience in coding, testing and establishing platform improvements.
-              Developed many features and components as per the client's requirements and follows agile methodology 
+                Developed many features and components as per the client's requirements and follows agile methodology 
                 </div>
 
                 <div className="about-page--right--grid">
@@ -41,6 +46,7 @@ const About =({Ref})=>{
                ) }
                 </div>
 
+            </div>
             </div>
             {/* </section> */}
         </div>
