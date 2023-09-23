@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/nazil-portfolio/static/css/main.ae7efcab.css",
-    "main.js": "/nazil-portfolio/static/js/main.47c6a6bc.js",
+    "main.css": "/nazil-portfolio/static/css/main.fd927199.css",
+    "main.js": "/nazil-portfolio/static/js/main.04e066a1.js",
     "static/js/787.28cb0dcd.chunk.js": "/nazil-portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Nazil_Ashraf.pdf (1).pdf": "/nazil-portfolio/static/media/Nazil_Ashraf.pdf (1).fc2a41d3b00ba5f900bf.pdf",
     "static/media/name.jpg": "/nazil-portfolio/static/media/name.ee7b659b4ce9557bebc8.jpg",
     "static/media/img.jpg": "/nazil-portfolio/static/media/img.231e76f1ba8e4df913a0.jpg",
     "static/media/Instagram.svg": "/nazil-portfolio/static/media/Instagram.c80092743d94c75a7ec9a27675eaef38.svg",
@@ -11,12 +12,12 @@
     "index.html": "/nazil-portfolio/index.html",
     "static/media/git.svg": "/nazil-portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/facebook.svg": "/nazil-portfolio/static/media/facebook.7aa3d057b680aec2ea447ff921d62d7a.svg",
-    "main.ae7efcab.css.map": "/nazil-portfolio/static/css/main.ae7efcab.css.map",
-    "main.47c6a6bc.js.map": "/nazil-portfolio/static/js/main.47c6a6bc.js.map",
+    "main.fd927199.css.map": "/nazil-portfolio/static/css/main.fd927199.css.map",
+    "main.04e066a1.js.map": "/nazil-portfolio/static/js/main.04e066a1.js.map",
     "787.28cb0dcd.chunk.js.map": "/nazil-portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae7efcab.css",
-    "static/js/main.47c6a6bc.js"
+    "static/css/main.fd927199.css",
+    "static/js/main.04e066a1.js"
   ]
 }
