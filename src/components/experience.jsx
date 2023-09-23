@@ -6,7 +6,7 @@ export const Experience =()=>{
     const [tabValue,setTabValue]=useState(1)
     return(
         <div className="experience-page" id='resume'>
-                   <div class="common-heading">
+                   <div className="common-heading">
               <h1>My Resume</h1>
             </div>
             {/* <div className="experience-page--heading"></div> */}

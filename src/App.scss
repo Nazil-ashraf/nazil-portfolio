@@ -7,8 +7,13 @@
     transition: all 0.5s ease-in-out;
     position: fixed;
     opacity: 0.8;
+    display: flex;
+    gap: 50px;
 
    
+  }
+  .app-icon{
+    margin: 22px 40px 22px 60px;
   }
 
   .common-heading{
@@ -42,6 +47,9 @@
     transition: all 0.5s ease-in-out;
     position: fixed;
     z-index: 3000;
+    display: flex;
+    gap: 50px;
+    z-index: 1;
   }
   .scroll-up-btn{
     position: absolute;
@@ -79,11 +87,13 @@
   .btn2 {
     font-size: 13px;
     letter-spacing: 0.3px;
-    width: 123px;
     border-radius: 24px;
     height: 40px;
     color:#ececec;
     display: flex;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
     align-items: center;
     align-items: 41px;
     justify-content: center;
@@ -92,7 +102,7 @@
     background: transparent;
     transition: all 0.4s;
     position: absolute;
-    top: 300px;
+    top: 320px;
     left: 36px;
     z-index: 1000;
   }
@@ -645,6 +655,7 @@
 }
 
 ul {
+  text-transform: uppercase;
   display: flex;
   gap: 7rem;
   font-size: 17px;
@@ -1564,15 +1575,6 @@ background: linear-gradient(56deg, rgb(14, 52, 129) 0%, rgba(8,11,16,1) 100%);
 
 /* Footer ====================================*/
 
-
-@media only screen and (min-width: 100px) and (max-width: 600px) {
-  .header {
-      display: none;
-  }
-  .scroll-header{
-    display: none;
-  }
-}
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
   .experience-page--education--first--box{
     width: 39vh !important;
@@ -1636,9 +1638,23 @@ background: linear-gradient(56deg, rgb(14, 52, 129) 0%, rgba(8,11,16,1) 100%);
 }
 }
 @media only screen and (min-width: 300px) and (max-width: 910px) {
+  .nav__container__actions{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 910px) {
   .nav__container__actions {
     padding-left: 0px !important;
   }
+  .app-icon {
+    margin: 22px 39px 22px 21px !important;
+}
+.header{
+  gap: 0px !important;
+}
+.scroll-header{
+  gap: 0px !important;
+}
   .experience-page{
     padding: 50px 48px 100px !important;
   }
@@ -1763,6 +1779,9 @@ background: linear-gradient(56deg, rgb(14, 52, 129) 0%, rgba(8,11,16,1) 100%);
     width: 372px !important;
     height: 700px  !important;
   }
+  .MuiDrawer-paper {
+    background-color: #16181c !important;
+}
   .about-page {
     padding: 88px 0px 432px !important;
 }
@@ -1819,13 +1838,84 @@ background: linear-gradient(56deg, rgb(14, 52, 129) 0%, rgba(8,11,16,1) 100%);
   width: 100% !important;
   align-items: center !important;
 }
+.experience-page--education--first--box {
+  width: 41vh !important;
+}
+
 
 .about-page--right--sub-heading {
   font-size: 17px !important;
 }
+.experience-page--tab {
+  width: 87% !important;
+}
 .about-page--right--grid--flex--sub-title {
   text-align: left !important;
 }
+.experience-page--tab--title{
+font-size: 15px !important;
+}
+.experience-page--tab--title-active {
+  font-size: 15px !important;
+  display: flex  !important;
+    justify-content: center !important;
+}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 420px) {
+  .parallax-card-layers {
+    width: 285px !important;
+    height: 533px !important;   
+    img{
+      width: 159px !important;
+    }
+  }
+  .experience-page {
+    padding: 50px 17px 100px !important;
+}
+  .experience-page--tab {
+    width: 98% !important;
+}
+  .skill-page{
+    clip-path: polygon(33% 0, 66% 3%, 100% 0, 100% 100%, 0 101%, 0 3%) !important;
+  }
+
+  .about-page {
+    padding: 88px 0px 333px !important;
+}
+  .flex{
+    padding: 17px !important;
+  }
+  .home {
+    padding: 101px 0px 52px !important;
+}
+  .line {
+    width: 0px !important;
+  }
+  .common-heading{
+    width: 40vh !important;
+
+   h1 {
+    font-size: 23px !important;
+}
+}
+  .sub-text {
+    width: 100% !important;
+    text-align: center !important;
+}
+.btn2 {
+  bottom: 23px !important;
+  left: 56px !important;
+}
+  .home-content-flex {
+    h3{
+      margin-top: 22px !important;
+      text-align: center !important;
+    }
+    h2{
+      font-size: 30px !important;
+    }
+  }
 }
 
 #splash {
@@ -1905,5 +1995,21 @@ background: linear-gradient(56deg, rgb(14, 52, 129) 0%, rgba(8,11,16,1) 100%);
   }
   100% {
     transform: translate(0%,-100%);
+  }
+}
+.drawer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+  padding: 36px 0px;
+  &--text{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 17px;
+    list-style: none;
+    font-family: "Montserrat",sans-serif;
+    cursor: pointer;
   }
 }

@@ -10,10 +10,8 @@ import { Snackbar } from '@mui/material';
     const form = useRef();
     const [open, setOpen] = useState(false);
     const [value, setvalue] = useState()
+    const [nillValue, setNillValue] = useState()
 
-    // const handleClick = () => {
-    //   setOpen(true);
-    // };
   
     const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
       if (reason === 'clickaway') {
@@ -30,6 +28,7 @@ import { Snackbar } from '@mui/material';
         .then((result) => {
             console.log(result.text);
             setOpen(true);
+            setNillValue()
             
             console.log('send message ')
         }, (error) => {
@@ -38,13 +37,12 @@ import { Snackbar } from '@mui/material';
   };
   const onlyNumberKey=(e)=> {    
     e = e.target.value.replace(/[^0-9]+/g, '');
-    console.log(e,'dddd')
    setvalue(e)
 }
 
 return (
     <div className="connect-page" id='connect'>
-             <div class="common-heading">
+             <div className="common-heading">
               <h1>Get In Touch With</h1>
             </div>
          <div className="connect-page--flex">
@@ -65,7 +63,7 @@ return (
            <div className="connect-page--flex--connect--label" >
            YOUR NAME
            </div>
-           <input className="connect-page--flex--connect--input"  name="user_name" type="text" maxLength={20}/>
+           <input className="connect-page--flex--connect--input"  name="user_name" type="text" maxLength={20} />
          </div>
          <div className="connect-page--flex--connect--wrap" >
            <div className="connect-page--flex--connect--label" >

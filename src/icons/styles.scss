@@ -1,0 +1,71 @@
+.siderbar-icon{
+    display: none;
+  
+} 
+
+.burger {
+    position: relative;
+    width: 32px;
+  }
+  
+  .burger,
+  .burger::before,
+  .burger::after {
+    display: block;
+    border-radius: 2px;
+    height: 2px;
+    background: #f9f9f9;
+    transition: 0.3s;
+  }
+  
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  
+  .burger::before {
+    top: -8px;
+  }
+  
+  .burger::after {
+    top: 8px;
+  }
+  
+
+.burger.burger-spin::before
+.burger.burger-spin::after {
+  transition-timing-function: linear;
+  transition-duration: 0.1s;
+}
+
+.burger.burger-spin.is-closed {
+  transform: rotate(360deg);
+  background: transparent;
+}
+
+.burger.burger-spin.is-closed::before {
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.burger.burger-spin.is-closed::after {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+   .header{
+    justify-content: space-between !important;
+   }
+   .scroll-header{
+    justify-content: space-between !important;
+   }
+    .siderbar-icon{
+      display: flex !important;
+      height: 36px !important;
+      align-items: flex-end !important;
+      justify-content: flex-end !important;
+      cursor: pointer;
+      margin-right: 27px;
+    } 
+  }

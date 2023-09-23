@@ -2,7 +2,8 @@ import { TypeAnimation } from "react-type-animation"
 import Card from 'react-animated-3d-card'
 import Img from'../image/img.jpg'
 import Arrow from'../image/arrow.png'
-import { useRef } from "react"
+import document from'../Nazil_Ashraf.pdf (1).pdf'
+
 
 export const Home = ({handleBackClick})=>{
 
@@ -17,7 +18,7 @@ export const Home = ({handleBackClick})=>{
          style={{
          background: "transparent",
          width: "900px",
-        height: "450px",
+        height: "414px",
         cursor: "pointer",
         boxShadow: "#000000 9px 5px 34px -16px"
         
@@ -60,7 +61,7 @@ export const Home = ({handleBackClick})=>{
   />
 
 
-  <i class="fa-regular fa-arrow-right"></i>
+  <i className="fa-regular fa-arrow-right"></i>
 
      </div>
      <img src={Img} height="40%" width="200px" style={{    borderRadius: "10%" ,objectFit: "cover" , marginTop:"20px"}} />
@@ -68,8 +69,18 @@ export const Home = ({handleBackClick})=>{
 
     </Card>
 
-    <div className='btn2'  onClick={handleBackClick}>ABOUT ME <img src={Arrow} height="18px"/> </div>
-
+    {/* <div   onClick={handleBackClick}>  </div> */}
+    <a
+        href={document}
+        download="Nazil_Resume"
+        target="_blank"
+        rel="noreferrer"
+        className='btn2'
+      >
+        Download Resume
+        <img src={Arrow} height="18px"/>
+     
+      </a>
 
 
  

@@ -5,13 +5,13 @@ const About =({Ref})=>{
     
     return(
  
-        <div className="about-page" ref={Ref}  id="about" >
+        <div className="about-page" ref={Ref} >
             
-             <div class="common-heading">
+             <div className="common-heading">
               <h1>About</h1>
             </div>
   
-       <div className="flex">
+       <div className="flex" id="about"  >
 
 
                    {/* <section id="about"> */}
